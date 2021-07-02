@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Google Basic" tests="5" time="2.997">
+  <testsuite name="Get Google.com nonprod" id="4417666d-6e65-493e-ad9b-5bf65efe63cf" timestamp="2021-06-14T11:13:21.222Z" tests="3" failures="1" errors="0" time="0.487">
+    <testcase name="Status code is 200" time="0.487" classname="GoogleBasic"/>
+    <testcase name="Response time is less than 100ms" time="0.487" classname="GoogleBasic">
+      <failure type="AssertionFailure" message="expected 487 to be below 100">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: b82e8446-8640-4727-b2b2-01960cb9217d.]]>
+        <![CDATA[Collection name: Google Basic.]]>
+        <![CDATA[Request name: Get Google.com nonprod.]]>
+        <![CDATA[Test description: Response time is less than 100ms.]]>
+        <![CDATA[Error message: expected 487 to be below 100.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 487 to be below 100
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Get Google.com with query params" id="1f68ac64-c291-494e-88c0-7a51042d9c90" timestamp="2021-06-14T11:13:21.222Z" tests="3" failures="1" errors="0" time="0.201">
+    <testcase name="Status code is 200" time="0.201" classname="GoogleBasic"/>
+    <testcase name="Response time is less than 100ms" time="0.201" classname="GoogleBasic">
+      <failure type="AssertionFailure" message="expected 201 to be below 100">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: b82e8446-8640-4727-b2b2-01960cb9217d.]]>
+        <![CDATA[Collection name: Google Basic.]]>
+        <![CDATA[Request name: Get Google.com with query params.]]>
+        <![CDATA[Test description: Response time is less than 100ms.]]>
+        <![CDATA[Error message: expected 201 to be below 100.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 201 to be below 100
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Authorisation check" id="f4f8b63d-6e50-4b1b-b55f-89d40a31350b" timestamp="2021-06-14T11:13:21.222Z" tests="3" failures="0" errors="0" time="0.934">
+    <testcase name="Status code is 200" time="0.934" classname="GoogleBasic"/>
+    <testcase name="Status code is 200 " time="0.934" classname="GoogleBasic"/>
+  </testsuite>
+  <testsuite name="Get Google.com with Parameters" id="20089728-037c-44e5-8a74-d63aeca469ce" timestamp="2021-06-14T11:13:21.222Z" tests="2" failures="0" errors="0" time="0.745">
+    <testcase name="Status code is 200" time="0.745" classname="GoogleBasic"/>
+  </testsuite>
+  <testsuite name="Get Google.com with Multiple Parameters" id="3ade272a-63ee-42ca-abe4-1543afd94bbb" timestamp="2021-06-14T11:13:21.222Z" tests="2" failures="0" errors="0" time="0.630">
+    <testcase name="Status code is 200" time="0.630" classname="GoogleBasic"/>
+  </testsuite>
+</testsuites>
