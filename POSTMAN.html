@@ -1,0 +1,1203 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>POSTMAN</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="b9aa22deba98b3b20c7ac8aca2">POSTMAN</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="POSTMAN_files/images/POSTMAN.jpg"></div>
+<h2 class="topic">
+<a name="193b56735e689ae86a01d91513">Request</a>
+</h2>
+<h3 class="topic">
+<a name="17508da9-2ba1-419b-ba25-ef131e29a801">&nbsp;parameters</a>
+</h3>
+<h3 class="topic">
+<a name="40cba952-95fe-4cce-ad97-1e8f59525911">&nbsp;&nbsp;{{URL}}public-api/users/:id
+Path parameter :id</a>
+</h3>
+<h3 class="topic">
+<a name="ae299b31-d402-469e-bc5a-e6785b3dfa21">&nbsp;&nbsp;Query Parameter 
+
+https://www.bing.com/search?q=ToolsQA
+starts with ?
+key=value 
+1) Key value are not case sensitive) 
+2) Even if you pass wrong key, no error will come </a>
+</h3>
+<h3 class="topic">
+<a name="96f32bc6-b592-476f-a23a-d798dbc8d97d">&nbsp;&nbsp;&nbsp;var __allQueryParams__ = pm.request.url.query.all();
+allQueryParams.forEach(function(queryparam){
+    console.log("Query params is : "+queryparam.key +" and its value is: "+queryparam.value)
+});</a>
+</h3>
+<h3 class="topic">
+<a name="4df804ef-f02f-407f-8d62-a7f8d1981c62">&nbsp;&nbsp;&nbsp;console.log(" Get Query Param Value" + pm.request.url.query.get("lastname"))
+</a>
+</h3>
+<h3 class="topic">
+<a name="cd6135c6-e363-46c6-9d28-ff0e663d1fe5">&nbsp;&nbsp;&nbsp;console.log(" get Query String " + pm.request.url.getQueryString())
+</a>
+</h3>
+<h3 class="topic">
+<a name="bab6b654-6b70-4779-bff0-ce1dc35850f8">&nbsp;Body</a>
+</h3>
+<h3 class="topic">
+<a name="daf3ed89-ae22-4a3e-b8ea-09dfd65c14a9">&nbsp;&nbsp;form-data</a>
+</h3>
+<h3 class="topic">
+<a name="338cfd70-a0e5-4c0c-b59d-f0604144d816">&nbsp;&nbsp;&nbsp;key-value pair like a form name/value</a>
+</h3>
+<h3 class="topic">
+<a name="6699f8a1-0df3-4858-8558-e16e99663540">&nbsp;&nbsp;&nbsp;Even image can be sent</a>
+</h3>
+<h3 class="topic">
+<a name="f16632f3-b893-4441-8c47-a809e2945aa9">&nbsp;&nbsp;raw</a>
+</h3>
+<h3 class="topic">
+<a name="52559d05-31c6-4ae0-b47d-cfdd0783f7b2">&nbsp;&nbsp;binary</a>
+</h3>
+<h3 class="topic">
+<a name="d4b36616-04ea-4f32-956c-9357dc19b83d">&nbsp;&nbsp;x-www-form-urlencoded</a>
+</h3>
+<h3 class="topic">
+<a name="259d0915-1afb-4d89-a4dc-992e9290733a">&nbsp;&nbsp;&nbsp;similar to form but URL will be encrypted</a>
+</h3>
+<h3 class="topic">
+<a name="aeeaf6d4-9e46-4cf0-a540-e71015e0355a">&nbsp;&nbsp;GraphQL</a>
+</h3>
+<h2 class="topic">
+<a name="5703e965-7e6e-4d1a-afc1-521089c1f049">The Collaboration Platform for API Development</a>
+</h2>
+<h2 class="topic">
+<a name="626c437c-a3f2-4a73-86d3-98c435998553">Major Components</a>
+</h2>
+<h3 class="topic">
+<a name="e13bd866-ad54-4437-9d7e-b5d56ecab215">&nbsp;Collections</a>
+</h3>
+<h3 class="topic">
+<a name="f59d7e3e-ce53-4f2e-b49d-f50358251aab">&nbsp;&nbsp;to keep similar cases together</a>
+</h3>
+<h3 class="topic">
+<a name="2df22f1b-d146-46fa-94fa-b14e0732a0cb">&nbsp;&nbsp;&nbsp;to form Test Suites</a>
+</h3>
+<h3 class="topic">
+<a name="4b3f019e-b0e1-4b4c-8202-622446e21c6b">&nbsp;Workspaces</a>
+</h3>
+<h3 class="topic">
+<a name="91f2072b-32f0-4575-a564-1cd56f4d99b3">&nbsp;&nbsp;to share your work with others</a>
+</h3>
+<h3 class="topic">
+<a name="5ebe0183-11d4-4328-8ce9-3b8022057078">&nbsp;&nbsp;&nbsp;Read only (default permission)</a>
+</h3>
+<h3 class="topic">
+<a name="179c972c-c823-479b-acd9-d9b955ebb32b">&nbsp;&nbsp;to work parallely on same APIs</a>
+</h3>
+<h3 class="topic">
+<a name="e61cf61d-1a58-42ff-960a-b1e55797979f">&nbsp;&nbsp;&nbsp;Single source of truth</a>
+</h3>
+<h3 class="topic">
+<a name="32ef47f5-ca57-4faa-9741-1370bc31963f">&nbsp;&nbsp;&nbsp;sync happens realtime</a>
+</h3>
+<h3 class="topic">
+<a name="e7218819-186d-41f6-a297-8f51cd8241ac">&nbsp;&nbsp;history of work is saved even</a>
+</h3>
+<h3 class="topic">
+<a name="22af17da-a191-40c5-a026-f915501cd59b">&nbsp;Environments</a>
+</h3>
+<h3 class="topic">
+<a name="02c96057-1dea-40f4-b14b-2585c435b600">&nbsp;&nbsp;define variables for Test/Dev/UAT</a>
+</h3>
+<h3 class="topic">
+<a name="3c907a64-33c6-41e7-bade-d8be55dc1f71">&nbsp;&nbsp;will help you maintaining config separate from test</a>
+</h3>
+<h3 class="topic">
+<a name="ac84d9cc-a9a4-4710-bc5c-249d1a47f674">&nbsp;Monitor</a>
+</h3>
+<h3 class="topic">
+<a name="d928aa53-0eac-49db-84a8-88955d74ff0f">&nbsp;&nbsp;you can make few collections(tests) runs every hour and check the results here without any manual intervention</a>
+</h3>
+<h3 class="topic">
+<a name="d5eccb8f-1162-4df9-9b85-3d83785aea42">&nbsp;Mock Servers</a>
+</h3>
+<h3 class="topic">
+<a name="aadbcfe1-d3aa-4c1f-b65e-5fbee1d9dd77">&nbsp;&nbsp;When the development is still going on, this can mock responses for you </a>
+</h3>
+<h3 class="topic">
+<a name="f5d3dac4-0a8e-4e73-acc9-43dd53e9bfa6">&nbsp;APIs</a>
+</h3>
+<h3 class="topic">
+<a name="1bf92d37-27a4-421f-83ef-125dccb870a5">&nbsp;&nbsp;Document APIs like which all methods it supports</a>
+</h3>
+<h3 class="topic">
+<a name="dd49faac-02c0-4092-b948-f1aeb6cca87a">&nbsp;&nbsp;it can generate test cases too from the given swagger file</a>
+</h3>
+<h2 class="topic">
+<a name="b495cf80-3d38-4eca-bb2e-d3d140901747">Features(related to API)</a>
+</h2>
+<h3 class="topic">
+<a name="492ac7cd-8484-436a-b362-03c6c2206d72">&nbsp;Publish</a>
+</h3>
+<h3 class="topic">
+<a name="6298e372-5c89-4784-a8f9-243e358efe9b">&nbsp;Monitor</a>
+</h3>
+<h3 class="topic">
+<a name="15e5df59-284b-4dd2-8a2a-068ce37db8d0">&nbsp;Document</a>
+</h3>
+<h3 class="topic">
+<a name="73987176-adbb-439f-ae7a-8602d91961ed">&nbsp;Design and mock</a>
+</h3>
+<h3 class="topic">
+<a name="8f8ff330-56e0-4ef2-b35e-bcdd96ade8c1">&nbsp;Debug</a>
+</h3>
+<h3 class="topic">
+<a name="f2f38fd6-482c-405f-aa79-45c8d6be6209">&nbsp;Automated Testing</a>
+</h3>
+<h3 class="topic">
+<a name="6370567f-91da-4c80-a477-05dea5494659">&nbsp;Code Generation in any language</a>
+</h3>
+<h3 class="topic">
+<a name="2k4o3aab5koiksu61n95h3h407">&nbsp;types</a>
+</h3>
+<h3 class="topic">
+<a name="27uhrnos9oh0akbvkpofmmpmib">&nbsp;&nbsp;REST</a>
+</h3>
+<h3 class="topic">
+<a name="3a8bhnstlleppl52qna1v0caqe">&nbsp;&nbsp;GraphQL Queries</a>
+</h3>
+<h3 class="topic">
+<a name="2j5m5hv13j3kt39mgfqt2f8n00">&nbsp;&nbsp;SOAP Requests</a>
+</h3>
+<h2 class="topic">
+<a name="2174c788-4a76-4312-8db7-e6a43ef974a1">Practise</a>
+</h2>
+<h3 class="topic">
+<a name="83b864e5-f58f-4845-ab10-d82bfdbe064b">&nbsp;https://gorest.co.in/</a>
+</h3>
+<h3 class="topic">
+<a name="51afcfc4-6289-4bc4-9061-ca95196290fe">&nbsp;https://restful-booker.herokuapp.com/apidoc/index.html</a>
+</h3>
+<h2 class="topic">
+<a name="d885102b-b49b-4342-b8d5-51be59a12e54">Headers(key-Value) used by client/server to exchange info</a>
+</h2>
+<h3 class="topic">
+<a name="1df96a6a-f090-4f42-8d94-e613ad932904">&nbsp;1. Authorization
+2. Content-MD5
+3. Content-Length
+4. Content-Type
+5. Date
+6. Connection
+7. Accept
+8. If-Match
+9. Accept-Encoding
+10. Range
+11. User-Agent
+
+and many others</a>
+</h3>
+<h3 class="topic">
+<a name="378d9706-666f-4f15-97c8-5de176219c2c">&nbsp;Accept
+
+application/xml
+</a>
+</h3>
+<h3 class="topic">
+<a name="bbc89b9e-c620-4fce-be64-218b58c41892">&nbsp;&nbsp;Responses that are acceptable</a>
+</h3>
+<h3 class="topic">
+<a name="98923cb1-72e8-41dc-961a-7e66eaf32298">&nbsp;Content-type
+
+text/xml</a>
+</h3>
+<h3 class="topic">
+<a name="817ca7ea-e1f5-42ee-83f7-84b4f0c74427">&nbsp;&nbsp;Tell server about your request type</a>
+</h3>
+<h3 class="topic">
+<a name="07ccdaf8-d85c-4701-89f0-e2a3c5bd0f38">&nbsp;&nbsp;Not needed in Get as no input request</a>
+</h3>
+<h3 class="topic">
+<a name="a4af1f73-8752-431a-9743-65dfec1e52d1">&nbsp;&nbsp;comes in response header as well infomring about the response type</a>
+</h3>
+<h3 class="topic">
+<a name="fdcf7699-ad39-456a-bbed-1e04e1148c82">&nbsp;Server</a>
+</h3>
+<h3 class="topic">
+<a name="a3e22a5d-35ee-455f-ac06-05f3c553a985">&nbsp;set-cookie</a>
+</h3>
+<h3 class="topic">
+<a name="2fd2d03f-9631-4574-a855-131f0a3f0c2e">&nbsp;&nbsp;cookie expiration date</a>
+</h3>
+<h3 class="topic">
+<a name="31971718-0809-427a-8122-6f6ed43af1c0">&nbsp;bulk edit option available in Postman for headers</a>
+</h3>
+<h2 class="topic">
+<a name="f2e08654-f0de-4fc4-aeaa-acf65e7d6f6d">Variables</a>
+</h2>
+<h3 class="topic">
+<a name="e38da6a9-0e39-4d4d-8617-4dee8a4a86b1">&nbsp;features (env/glb/coll)</a>
+</h3>
+<h3 class="topic">
+<a name="07dcb0e8-73cd-4c4b-ab0c-ebd254311a35">&nbsp;&nbsp;initial - would be passed when collection share (don't put credentials)</a>
+</h3>
+<h3 class="topic">
+<a name="64cf3ad0-f032-440b-9e93-afa13dd9093b">&nbsp;&nbsp;current - local only</a>
+</h3>
+<h3 class="topic">
+<a name="cceba96c-4404-4b17-b956-4fdbeab1aba9">&nbsp;&nbsp;are Case sensitive</a>
+</h3>
+<h3 class="topic">
+<a name="3c2e8116-e0bf-493f-b990-54a4fa3e88c2">&nbsp;Priority</a>
+</h3>
+<h3 class="topic">
+<a name="af07342c-520b-4700-ab41-93fab3a37162">&nbsp;&nbsp;1. Temporary/local/debugging/logging</a>
+</h3>
+<h3 class="topic">
+<a name="9c2149cb-8c96-4b3b-b2fb-3d4057164418">&nbsp;&nbsp;2. Data </a>
+</h3>
+<h3 class="topic">
+<a name="712e4c3c-28dc-4638-a0eb-ce4fd97e958f">&nbsp;&nbsp;3. Environment</a>
+</h3>
+<h3 class="topic">
+<a name="d9866663-0652-4378-b2be-cae1d71052e4">&nbsp;&nbsp;&nbsp;test/UAT</a>
+</h3>
+<h3 class="topic">
+<a name="bd49d075-2421-4135-a472-6dcdc888f9b7">&nbsp;&nbsp;4. Collection</a>
+</h3>
+<h3 class="topic">
+<a name="9be1fd78-7753-4d3f-9231-838d83aa8921">&nbsp;&nbsp;5. Globals</a>
+</h3>
+<h3 class="topic">
+<a name="f8d44f1e-bbaf-44d2-9f06-158e62cc6c5c">&nbsp;&nbsp;&nbsp;within workspace</a>
+</h3>
+<h3 class="topic">
+<a name="45e3f262-ff78-417d-8c71-520a3c53c7b3">&nbsp;types</a>
+</h3>
+<h3 class="topic">
+<a name="5bda3197-a1af-4b75-a5d5-aeea46e77cba">&nbsp;&nbsp;Local</a>
+</h3>
+<h3 class="topic">
+<a name="9880df5f-ce86-4786-b9d2-d5fab52b8d61">&nbsp;&nbsp;&nbsp;pm.variables.set("variable","123456")
+</a>
+</h3>
+<h3 class="topic">
+<a name="0b97b34c-9e49-44fe-a44d-d90c8af33b19">&nbsp;&nbsp;&nbsp;&nbsp;can retain value if run via colleciton  </a>
+</h3>
+<h3 class="topic">
+<a name="b1478a6d-36db-4ecb-a67b-652979ff9497">&nbsp;&nbsp;&nbsp;var/let</a>
+</h3>
+<h3 class="topic">
+<a name="59efdab4-619d-4dde-810a-5295bda9323a">&nbsp;&nbsp;&nbsp;&nbsp;Only visible till the script</a>
+</h3>
+<h3 class="topic">
+<a name="3be5bb18-8b58-4935-b790-02872094557c">&nbsp;&nbsp;Environment</a>
+</h3>
+<h3 class="topic">
+<a name="9d6bdd19-0b09-4d9c-b989-a8153cab42be">&nbsp;&nbsp;&nbsp;{
+    "username":"{{username}}",
+    "password":"{{password}}"
+}</a>
+</h3>
+<h3 class="topic">
+<a name="aee067a8-b324-4d9e-9fbe-b28ded08b199">&nbsp;&nbsp;Global</a>
+</h3>
+<h3 class="topic">
+<a name="6ddfa6de-fc59-4eb8-b33e-f5d7831f67cd">&nbsp;&nbsp;&nbsp;{{}} &lt;-- place between 2 curly braces same as local/env variable
+
+if used for request then " is also required</a>
+</h3>
+<h3 class="topic">
+<a name="75b462d0-55ad-4985-be3e-33ab7ec5d8c0">&nbsp;&nbsp;Collection</a>
+</h3>
+<h3 class="topic">
+<a name="1747814b-fcb9-434a-99ba-31fdfaa40cc1">&nbsp;&nbsp;&nbsp;Get exported with collection</a>
+</h3>
+<h3 class="topic">
+<a name="b3293221-6ed3-41bc-b677-c4aabe6185c3">&nbsp;&nbsp;Dynamic</a>
+</h3>
+<h3 class="topic">
+<a name="770847ff-062e-48e4-b12e-1be751d9b94f">&nbsp;&nbsp;&nbsp;Not allowed</a>
+</h3>
+<h3 class="topic">
+<a name="5d8eeb7d-3d71-4a3b-bfd5-22d27f09d032">&nbsp;&nbsp;&nbsp;&nbsp;Pre-Request script / Tests </a>
+</h3>
+<h3 class="topic">
+<a name="7d5ee690-e3ca-4c85-b8b5-abab85b0b1d1">&nbsp;&nbsp;&nbsp;&nbsp;Alternate for guid</a>
+</h3>
+<h3 class="topic">
+<a name="a9b21554-560e-46f8-b726-5eecd72e6497">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var uid = require('uuid')
+var id = uid.v4();
+console.log(id)</a>
+</h3>
+<h3 class="topic">
+<a name="ec9ddb02-a7de-4b34-b4d3-87648241b3b6">&nbsp;&nbsp;&nbsp;allowed</a>
+</h3>
+<h3 class="topic">
+<a name="c2bff3f6-de48-4868-b1df-4eecede5b419">&nbsp;&nbsp;&nbsp;&nbsp;URL/HEaders/body</a>
+</h3>
+<h3 class="topic">
+<a name="940a5b85-f443-41a0-a178-4088b3feda3b">&nbsp;&nbsp;&nbsp;{{$var}} - $ symbol is used</a>
+</h3>
+<h3 class="topic">
+<a name="7e940d1e-9941-4057-a6b8-5f004681ca91">&nbsp;&nbsp;Data </a>
+</h3>
+<h3 class="topic">
+<a name="6f29ed58-e530-45a7-99bd-14793293196b">&nbsp;&nbsp;&nbsp;pm.iterationData.get("variableName")</a>
+</h3>
+<h3 class="topic">
+<a name="0e280bff-1772-4cbe-85c9-8b01f53a6523">&nbsp;&nbsp;&nbsp;Read only</a>
+</h3>
+<h2 class="topic">
+<a name="3f9bb149-7dc8-43e4-848a-ba7b412b1a05">Tests</a>
+</h2>
+<h3 class="topic">
+<a name="cb6f914e-f571-45bd-b98e-48ebbcecad55">&nbsp;Javascript code</a>
+</h3>
+<h3 class="topic">
+<a name="9d426e47-19bb-4410-ad5a-1aa07c1756cc">&nbsp;Only runs when request is successful</a>
+</h3>
+<h3 class="topic">
+<a name="64ae6630-eed4-4d87-a28d-507f2b95b082">&nbsp;Javascript method
+
+tests["Status code is 200 "] = responseCode.code === 200</a>
+</h3>
+<h3 class="topic">
+<a name="c24dc937-a05a-4f6a-8fc9-0ca43ccd8060">&nbsp;Functional method pm.tests("testing title",function() {console.log("Hello" });</a>
+</h3>
+<h2 class="topic">
+<a name="3661a760-2a66-4aa4-90ea-0e3383761994">Assertions</a>
+</h2>
+<h3 class="topic">
+<a name="3f3d99d5-d62a-4d18-a375-408e2f748aba">&nbsp;pm.test("REsponse should contain the key 'token",function()
+{
+    var jsondata = pm.response.json();
+    pm.expect(jsondata).to.have.property("token")
+});</a>
+</h3>
+<h3 class="topic">
+<a name="439b8391-203f-4a6b-b261-5f496153c764">&nbsp;pm.test("Token must not be null",function()
+{
+    var jsondata = pm.response.json();
+    var flag = jsondata.token == null;
+     pm.expect(flag).to.equal(false);
+});</a>
+</h3>
+<h3 class="topic">
+<a name="907aaf61-7c7f-4720-8b6d-32e6c1a4236b">&nbsp;pm.expect(pm.response.headers.get("Server")).to.eql("Cowboy")
+</a>
+</h3>
+<h3 class="topic">
+<a name="1c8783bd-47c1-43d9-9cd3-3fe21bbb5bca">&nbsp;pm.expect(res.lastname).to.not.equal("Jonesa");
+</a>
+</h3>
+<h3 class="topic">
+<a name="cf4372a8-21bf-4a56-9389-06beb2cc814d">&nbsp;pm.expect(res.totalprice).to.be.above(100);
+</a>
+</h3>
+<h3 class="topic">
+<a name="bd30f996-0ff7-4587-8f0a-41710cd166e4">&nbsp;pm.expect(res.totalprice).to.be.below(500);</a>
+</h3>
+<h3 class="topic">
+<a name="fbe7d724-c4ab-4517-8284-8792ee3da6ab">&nbsp;     pm.expect(parseInt(bookingID)).to.be.a("number")
+</a>
+</h3>
+<h3 class="topic">
+<a name="2e0cfd38-1bc4-4edf-90f2-e94023d9e356">&nbsp;pm.expect(jsonReq["booking"]["bookingdates"]["checkin"]).to.eql(jsonRes["created-booking"]["booking"]["bookingdates"]["checkin"])
+</a>
+</h3>
+<h3 class="topic">
+<a name="d43788bf-44c3-4994-9688-d982264c3774">&nbsp;pm.response.to.have.status("OK")
+</a>
+</h3>
+<h3 class="topic">
+<a name="04a6e041-1dad-485a-907c-2897e4ee64da">&nbsp;pm.response.to.have.status(200)
+</a>
+</h3>
+<h3 class="topic">
+<a name="a2638da6-7f13-4587-b6fb-6ed7334b27f4">&nbsp;pm.expect(pm.response.code).to.equal(200)
+</a>
+</h3>
+<h3 class="topic">
+<a name="a6ebd4c5-f0e1-4e32-8abb-072a2d945863">&nbsp;pm.expect(pm.response.status).to.equal("OK") 
+</a>
+</h3>
+<h3 class="topic">
+<a name="6a7d6cf2-932c-4947-86b5-74ed819de4b1">&nbsp;pm.expect(pm.response.code).to.be.oneOf([201,200])</a>
+</h3>
+<h3 class="topic">
+<a name="2035749d-61be-465e-af29-4401f5b53e3a">&nbsp;pm.expect(pm.response.status.toLowerCase()).to.equal("OK".toLowerCase())
+</a>
+</h3>
+<h3 class="topic">
+<a name="427185db-9ca7-4936-ac1b-2cbcb9f544a9">&nbsp;pm.expect(pm.response.responseTime).to.be.below(25000)
+</a>
+</h3>
+<h3 class="topic">
+<a name="3ebed9b0-4203-4736-b463-8798967b2626">&nbsp;pm.expect(pm.response.responseTime).to.be.above(199)
+</a>
+</h3>
+<h3 class="topic">
+<a name="c9cb8b44-99b3-4d75-b339-f63b43a1e532">&nbsp;pm.expect(_.inRange(pm.response.responseTime,20,20000)).to.eql(true)
+</a>
+</h3>
+<h3 class="topic">
+<a name="5fff804c-82a6-4eae-87c4-b254270b42b6">&nbsp;pm.expect(pm.response.responseSize).to.not.equal(0)
+</a>
+</h3>
+<h3 class="topic">
+<a name="39c7a4ad-d5d5-43a0-b52b-a0cc0723c50f">&nbsp;pm.expect(pm.response.text()).to.include("lastname")
+</a>
+</h3>
+<h3 class="topic">
+<a name="6f4eb10f-1616-4656-b4e0-3fa3ac4b12dc">&nbsp;pm.response.to.have.header("content-type")
+</a>
+</h3>
+<h3 class="topic">
+<a name="57aad2af-8359-4d5e-9ce5-20cb397602cd">&nbsp;pm.expect(pm.response.headers.get("Content-Type")).to.eql("text/html; charset=utf-8")
+</a>
+</h3>
+<h3 class="topic">
+<a name="88393ba0-acf8-4a2e-a658-84ba7b334e9e">&nbsp;pm.expect(pm.response.json()).to.be.an("array")
+</a>
+</h3>
+<h3 class="topic">
+<a name="ed158f77-fa23-42e3-bb46-a159789aa3bd">&nbsp;pm.expect(pm.response.json()).to.be.an("object")
+</a>
+</h3>
+<h3 class="topic">
+<a name="2eb48ff9-a988-4da8-af14-5149ea155292">&nbsp;    pm.expect([2]).to.be.an("array").that.is.empty
+</a>
+</h3>
+<h3 class="topic">
+<a name="3d2f2091-1aa6-45ad-9a4c-3e8729ec4c0c">&nbsp;    pm.response.to.be.badRequest;
+</a>
+</h3>
+<h3 class="topic">
+<a name="232ca19e-233b-436a-9f9a-dcba99c7d5d9">&nbsp;        pm.response.to.be.json;
+</a>
+</h3>
+<h3 class="topic">
+<a name="08edab08-03cf-40db-88f0-3c7f2b117611">&nbsp;cookies</a>
+</h3>
+<h3 class="topic">
+<a name="cf001628-de3c-4d6e-8a66-b6eee713c8f0">&nbsp;&nbsp;pm.expect(pm.cookies.has("VstsSession")).to.be.true;</a>
+</h3>
+<h3 class="topic">
+<a name="9f6582f2-c340-41ad-af02-817e835ac6f2">&nbsp;&nbsp;pm.expect(pm.cookies.get("VstsSession")).to.be.equal("12345")</a>
+</h3>
+<h3 class="topic">
+<a name="6aefe75e-a8c0-4e81-952d-d8b59e8eb095">&nbsp;pm.expect(pm.response.json().args["user-agent"]).includes("PostmanRuntime/")</a>
+</h3>
+<h2 class="topic">
+<a name="a02e7b33-2971-4522-8d67-3130d2bca052">Collections</a>
+</h2>
+<h3 class="topic">
+<a name="eced8ba8-375f-44b8-890f-0c6220a8d134">&nbsp;Group request together</a>
+</h3>
+<h3 class="topic">
+<a name="17afbfdf-894b-4f8e-a553-7719323711bf">&nbsp;Running different test together</a>
+</h3>
+<h3 class="topic">
+<a name="bad49804-11fb-499d-a62a-ec533b674c2c">&nbsp;1.	Categorisation of requests
+2.	Building Test Suites
+3.	Run individual request /folder/collections
+4.	Result repository
+5.	Running tests in different environments
+6.	Passing data among requests
+7.	Achieving data driven testing
+8.	API documentation.
+9.	Sharing APIs as Collections
+10.	Easy import and export of APIs
+11.	Managing APIs. Adding, removing or updating APIs
+12.	Reporting using newman
+13.	Jenkins integration using newman
+</a>
+</h3>
+<h3 class="topic">
+<a name="85be0a8e-ddb8-4c24-8178-09319955133d">&nbsp;Export</a>
+</h3>
+<h3 class="topic">
+<a name="adbcb9eb-a95a-4d79-8647-4962483386bc">&nbsp;&nbsp;Create a link from share collection, on every share it needs to be updated, not sync automatically</a>
+</h3>
+<h3 class="topic">
+<a name="8ba17e10-a102-4111-abd8-0ab92f7c7f88">&nbsp;Can have pre-request script and tests as well</a>
+</h3>
+<h3 class="topic">
+<a name="b12723d0-a013-43a8-ba64-f16db7118ce2">&nbsp;Can have a folder</a>
+</h3>
+<h3 class="topic">
+<a name="13d7d825-3bb0-421b-bb39-07dc0a62ce3f">&nbsp;&nbsp;pre-Request script &amp; tests</a>
+</h3>
+<h2 class="topic">
+<a name="8f388cdc-2e11-43a2-9705-81bd2e8ff043">Save as an example to use later </a>
+</h2>
+<h2 class="topic">
+<a name="4e3bd578-fe94-4ec2-b4a3-98002382f00e">Postman Sandbox - Node js based runtime env written in javascript</a>
+</h2>
+<h3 class="topic">
+<a name="28fd23d2-d71f-4fd4-9791-bbb2c0cadb4f">&nbsp;has built in libraries(chai, postman-collection) - need to use require()</a>
+</h3>
+<h3 class="topic">
+<a name="8bbee7e2-3fe2-41fb-8e73-9f25fb1a43fc">&nbsp;node js modules (Assert, buffer, util)</a>
+</h3>
+<h3 class="topic">
+<a name="48ccfb7d-97b9-4574-acaf-f531e8a2fc42">&nbsp;where to use</a>
+</h3>
+<h3 class="topic">
+<a name="83f7882d-1a72-464e-8e14-756938170131">&nbsp;&nbsp;Tests(tab)</a>
+</h3>
+<h3 class="topic">
+<a name="34f7f03e-ee10-4eea-94f9-156cced33af6">&nbsp;&nbsp;Pre-Requisite script (tab)</a>
+</h3>
+<h2 class="topic">
+<a name="b17429f5-3430-4828-a181-82b2fd8e0902">Console</a>
+</h2>
+<h3 class="topic">
+<a name="0971642e-6d93-41d9-be45-60e237cdeef8">&nbsp;Actual Request</a>
+</h3>
+<h3 class="topic">
+<a name="da1dd3de-bca3-4331-8db5-8eeb4b335b03">&nbsp;Variable</a>
+</h3>
+<h3 class="topic">
+<a name="004b68df-737d-4a3a-a799-0e570147d248">&nbsp;Headers</a>
+</h3>
+<h3 class="topic">
+<a name="1f9421fe-c456-42d3-b2e5-97a1f436f3c1">&nbsp;Actual Response</a>
+</h3>
+<h3 class="topic">
+<a name="3da5bfcd-84ce-4f6c-b5c7-f91cc1cb4f33">&nbsp;Console.log messages from Pre-Request script and Tests</a>
+</h3>
+<h2 class="topic">
+<a name="0e90649f-0ffe-41d6-8b10-f1b0cdc9fedd">Postman/ PM's API</a>
+</h2>
+<h3 class="topic">
+<a name="15b15b77-b8af-4bad-a022-07c1fe55cec1">&nbsp; pm.*(Global functions)</a>
+</h3>
+<h3 class="topic">
+<a name="6559dc6e-851b-4e70-a9d4-8eb9251d1687">&nbsp;&nbsp;Global object which has tests method
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+Even if there is a failure rest of the script will work(advntage of func)</a>
+</h3>
+<h3 class="topic">
+<a name="d33904c5-01c9-4bb7-a1ff-16c69bd7d26e">&nbsp;&nbsp;Envrionment</a>
+</h3>
+<h3 class="topic">
+<a name="a463a675-78c9-4b85-9c86-9a53491cd815">&nbsp;&nbsp;&nbsp;pm.environment.set("var","123")</a>
+</h3>
+<h3 class="topic">
+<a name="7b4bb3f9-fc74-425b-9602-5facb3b54d73">&nbsp;&nbsp;&nbsp;pm.environment.get("var")</a>
+</h3>
+<h3 class="topic">
+<a name="a113e818-aacc-4826-bf20-5181ae57098c">&nbsp;&nbsp;&nbsp;pm.environemnt.unset("var")</a>
+</h3>
+<h3 class="topic">
+<a name="05ad4589-8a3a-4682-bfdb-2891f8b81d68">&nbsp;&nbsp;&nbsp;Dont get retained after execution</a>
+</h3>
+<h3 class="topic">
+<a name="82788e77-563b-492b-aef8-94bbcdfd7535">&nbsp;&nbsp;&nbsp;pm.globals.has("var")</a>
+</h3>
+<h3 class="topic">
+<a name="6ba446d1-31dd-464c-9925-5842cfe092d3">&nbsp;&nbsp;Global</a>
+</h3>
+<h3 class="topic">
+<a name="b01b4d9a-af62-43d6-85c0-d347b9c2a079">&nbsp;&nbsp;&nbsp;pm.global.set("var","123")</a>
+</h3>
+<h3 class="topic">
+<a name="bc20d9b1-b996-4ddd-a8f6-7595c9fd3a39">&nbsp;&nbsp;&nbsp;pm.global.get("var")</a>
+</h3>
+<h3 class="topic">
+<a name="ff4090ea-c0b0-4ffc-aa9b-4be8ed8a358f">&nbsp;&nbsp;&nbsp;pm.global.unset("var")</a>
+</h3>
+<h3 class="topic">
+<a name="f7218b27-6496-48c4-bdbe-7d10603819f1">&nbsp;&nbsp;&nbsp;values retinaed even after execution</a>
+</h3>
+<h3 class="topic">
+<a name="464076b5-7281-4ea6-9cac-42e23bde17f4">&nbsp;&nbsp;&nbsp;pm.globals.has("var")</a>
+</h3>
+<h3 class="topic">
+<a name="3fc891c6-6314-436b-8932-4933f019e0f8">&nbsp;&nbsp;similar to global</a>
+</h3>
+<h3 class="topic">
+<a name="a0fa4c32-3f3c-4334-b3b1-22df63ead649">&nbsp;&nbsp;&nbsp;data</a>
+</h3>
+<h3 class="topic">
+<a name="eb6299eb-66fc-4e86-8f2b-f514eafe6d4f">&nbsp;&nbsp;&nbsp;local</a>
+</h3>
+<h3 class="topic">
+<a name="87d625c5-99e5-41b9-a26e-a959626a737e">&nbsp;&nbsp;&nbsp;collection</a>
+</h3>
+<h3 class="topic">
+<a name="4a557630-5862-4f04-a27f-086ccd10a10b">&nbsp;&nbsp;1.	pm.info
+2.	pm.variables
+3.	pm.request
+4.	pm.response
+5.	pm.sendRequest
+6.	pm.environment
+7.	pm.globals
+8.	pm.iterationData
+9.	pm.cookies
+10.	pm.test
+11.	pm.expect</a>
+</h3>
+<h3 class="topic">
+<a name="17e95427-a2ca-4630-a3d8-f68d23e4a295">&nbsp;&nbsp;pm.request.headers will give different result of Pre-Request Script (only users adde header) / tests</a>
+</h3>
+<h3 class="topic">
+<a name="acbf0007-5e1e-4dca-9fd5-3dcf491e44eb">&nbsp;&nbsp;&nbsp;pm.response.headers.get("Server")) </a>
+</h3>
+<h2 class="topic">
+<a name="ca880591-9439-46d8-a79b-2ea497c3f5e2">postman.setnextRequest("Requestname")
+
+postman.setNextReqest(null)
+
+can be placed anywhere in tests</a>
+</h2>
+<h2 class="topic">
+<a name="8a3a6f4a-9618-4c15-a474-d59f250e1e67">Json</a>
+</h2>
+<h3 class="topic">
+<a name="cbd17cdd-6232-450a-ac5a-95dfc6874ff7">&nbsp;Parsing
+</a>
+</h3>
+<h3 class="topic">
+<a name="6221557e-ffef-40fb-b879-5d167ca4fd71">&nbsp;&nbsp;only keys</a>
+</h3>
+<h3 class="topic">
+<a name="bdc60c92-4888-465b-b893-5896cdc89db8">&nbsp;&nbsp;&nbsp;console.log(" Only Keys ")
+var keys = Object.keys(res);
+keys.forEach(function(k)
+{
+console.log(k)
+});</a>
+</h3>
+<h3 class="topic">
+<a name="9001786f-39a4-4e80-a29e-cc925bef3745">&nbsp;&nbsp;Only values</a>
+</h3>
+<h3 class="topic">
+<a name="1e7c4630-f189-4db4-85ef-09beadeb19eb">&nbsp;&nbsp;&nbsp;console.log(" Only Values ")
+var values=Object.values(res)
+values.forEach(function(v)
+{
+console.log(v)
+});</a>
+</h3>
+<h3 class="topic">
+<a name="d227544a-6878-46cb-bdf0-18a58ae11f03">&nbsp;&nbsp;Both key Values</a>
+</h3>
+<h3 class="topic">
+<a name="66236e86-05fa-4ee3-86a2-2456aa3287c5">&nbsp;&nbsp;&nbsp;console.log("Both keys and values ");
+for(var key in res)
+{
+    console.log(" Keys ",key , "value = " ,  res[key])
+}</a>
+</h3>
+<h3 class="topic">
+<a name="1aadda44-8511-4b25-bdcf-f44e8fcd5a1c">&nbsp;&nbsp;Individual elments</a>
+</h3>
+<h3 class="topic">
+<a name="6193b100-961e-4252-bacf-04e812b92b35">&nbsp;&nbsp;&nbsp;console.log(" Individual Elements are ")
+console.log( "Firstname " , res.firstname);
+console.log(" bookingDates ", res.bookingdates.checkin);</a>
+</h3>
+<h3 class="topic">
+<a name="0e36ced8-e28e-4688-b8bc-2d4cd9d4ddc2">&nbsp;&nbsp;Jsonobject within Json</a>
+</h3>
+<h3 class="topic">
+<a name="1b34f04b-a83f-4709-8125-d1c022296357">&nbsp;&nbsp;&nbsp;ja.each(function(va)
+{
+console.log(va.bookingid)
+})</a>
+</h3>
+<h3 class="topic">
+<a name="ed09495b-ecdd-4289-a42d-b4954800bac7">&nbsp;&nbsp;&nbsp;for(var i=0 ;i&lt; ja.length ;i++)
+{
+console.log(" Bookingid " , i , "  ", ja[i].bookingid)
+}</a>
+</h3>
+<h3 class="topic">
+<a name="2155d788-e0e8-4820-b0a6-12090b693a7a">&nbsp;&nbsp;XML</a>
+</h3>
+<h3 class="topic">
+<a name="51bcdd7a-8b75-49fd-82c6-f9125de54cf1">&nbsp;&nbsp;&nbsp;Request</a>
+</h3>
+<h3 class="topic">
+<a name="cebd8b7c-2a66-4798-b076-2649551e0d67">&nbsp;&nbsp;&nbsp;&nbsp;var jsonReq = xml2Json(pm.request.body.raw)</a>
+</h3>
+<h3 class="topic">
+<a name="c7a3a207-4735-4ae5-ae8a-063e8b40427c">&nbsp;&nbsp;&nbsp;Respone</a>
+</h3>
+<h3 class="topic">
+<a name="fbb3d1fd-dc74-45a9-9cc0-2b23922b887e">&nbsp;&nbsp;&nbsp;&nbsp;var jsonRes = xml2Json(responseBody)</a>
+</h3>
+<h3 class="topic">
+<a name="91273f09-8b61-43d3-93f1-4afc28bbe5ab">&nbsp;&nbsp;Json</a>
+</h3>
+<h3 class="topic">
+<a name="df26c611-5267-40ac-8b8c-10f5a4dc327b">&nbsp;&nbsp;&nbsp;Request</a>
+</h3>
+<h3 class="topic">
+<a name="539dbea2-b240-442e-bd4c-aef85b605179">&nbsp;&nbsp;&nbsp;&nbsp;req=JSON.parse(request.data)
+req.name</a>
+</h3>
+<h3 class="topic">
+<a name="871600fc-2f54-41b2-9c6e-2509ae03d7a6">&nbsp;&nbsp;&nbsp;&nbsp;var raw=JSON.parse(pm.request.body.raw)</a>
+</h3>
+<h3 class="topic">
+<a name="146313e7-cae3-44ac-bafa-14c303da64f3">&nbsp;&nbsp;&nbsp;Response</a>
+</h3>
+<h3 class="topic">
+<a name="51620536-35fe-4f80-89cd-2c56126cd455">&nbsp;&nbsp;&nbsp;&nbsp;res=pm.response.json()
+res.name</a>
+</h3>
+<h3 class="topic">
+<a name="6e8d18eb-bb5c-4c11-adc1-734a1543f7f3">&nbsp;Json Array</a>
+</h3>
+<h3 class="topic">
+<a name="87539eff-4d3a-45b3-95fd-1fbe13d476ca">&nbsp;&nbsp;ORdered list of Values</a>
+</h3>
+<h2 class="topic">
+<a name="08ade9d8-edae-4a4b-969e-13f4ac8fac2f">Important</a>
+</h2>
+<h3 class="topic">
+<a name="99ea5984-8978-46a6-a14b-7edbbde5e55f">&nbsp;used responseInJson[key] instead of responseInJson.key. We need to use dot operator when it is constant and square bracket when key is not constant so that it will evaluate the value of key first before searching for the value in JSON.</a>
+</h3>
+<h2 class="topic">
+<a name="d2b722f8-c110-46ac-9f92-0e3786cd5889">Export</a>
+</h2>
+<h3 class="topic">
+<a name="c8f5d4b7-80a7-4c42-a80f-ea2ddf44b75a">&nbsp;Collection</a>
+</h3>
+<h3 class="topic">
+<a name="1cdb0206-0c84-4598-a4e2-911b279832d6">&nbsp;&nbsp;Does not import local/global variable</a>
+</h3>
+<h3 class="topic">
+<a name="e4a7cebb-a850-4893-91f8-4b051099dc33">&nbsp;Variables(local/global)</a>
+</h3>
+<h3 class="topic">
+<a name="fce205df-d679-43e0-8208-0ea285a3f6b8">&nbsp;&nbsp;.postman_environment.json
+as extention
+
+
+.postman_globals.json</a>
+</h3>
+<h2 class="topic">
+<a name="b12cdfb6-6ec0-482d-9773-2fb09f723e09">import</a>
+</h2>
+<h3 class="topic">
+<a name="a1e9b687-5d1f-404a-ba6d-85b21a77a04d">&nbsp;Collection</a>
+</h3>
+<h3 class="topic">
+<a name="3cfb776c-7f42-41e0-a721-791949a2af88">&nbsp;Variable</a>
+</h3>
+<h2 class="topic">
+<a name="37d289c0-4b6a-4444-8410-704ffc3c73bb">Header Presets</a>
+</h2>
+<h3 class="topic">
+<a name="662527b2-bf2a-4b4d-bf32-5b999828fb74">&nbsp;how to add</a>
+</h3>
+<h3 class="topic">
+<a name="1682570c-8b0b-4b76-9cb6-8b25d4d8744e">&nbsp;&nbsp;typing on header</a>
+</h3>
+<h3 class="topic">
+<a name="89920c85-abd6-4fa7-9abb-bc02a78404c5">&nbsp;&nbsp;Top right in headers tab</a>
+</h3>
+<h3 class="topic">
+<a name="644596a4-7a51-4ee5-8a3b-235ae5ea5b83">&nbsp;disadvantage</a>
+</h3>
+<h3 class="topic">
+<a name="b0c8b642-180e-4d10-adb4-b940a4171ba8">&nbsp;&nbsp;Copy by value only and not reference </a>
+</h3>
+<h3 class="topic">
+<a name="c3f61b82-952f-42b3-89ca-540d1bfab064">&nbsp;&nbsp;Cant remove all headers at once</a>
+</h3>
+<h2 class="topic">
+<a name="3777eb0c-bf37-4a48-aa1a-f3857018210d">Collection Runner</a>
+</h2>
+<h3 class="topic">
+<a name="0e0fe0c8-ae5f-4af4-9059-5008bc382c0d">&nbsp;To run all the request via UI</a>
+</h3>
+<h3 class="topic">
+<a name="e9b3addb-128c-4648-b7ab-fe98e74a5651">&nbsp;json</a>
+</h3>
+<h3 class="topic">
+<a name="8aeed635-a76c-4e54-b632-b61fa0cc7f06">&nbsp;&nbsp;only json array are allowed [ { } ]</a>
+</h3>
+<h3 class="topic">
+<a name="1aa8c02b-d03d-45c0-9544-3def43f0bc91">&nbsp;Ruuning via send will not work - 404</a>
+</h3>
+<h3 class="topic">
+<a name="d51acd1f-39d0-4fb5-9e05-0d697ba98728">&nbsp;Data Driven testing</a>
+</h3>
+<h3 class="topic">
+<a name="e6a2bc71-87ea-4d0c-9153-3e1df28d61d3">&nbsp;&nbsp;csv</a>
+</h3>
+<h3 class="topic">
+<a name="e4f809f6-ea9b-4141-95cd-3266122b69af">&nbsp; pm.iterationData.get("firstname")
+
+to get data from the data sheet </a>
+</h3>
+<h3 class="topic">
+<a name="968d11f0-04d4-4460-bbe8-5a1a0bcd595c">&nbsp;{
+"firstname":"{{firstname}}",
+"lastname":"{{lastname}}",
+"totalprice":{{totalprice}},
+"depositpaid" : {{depositpaid}},
+"bookingdates":{
+    "checkin":"{{checkin}}",
+    "checkout" :"{{checkout}}"
+},
+"additionalneeds":"{{additionalneeds}}"
+}
+
+numbers / boolean without quotes in body</a>
+</h3>
+<h3 class="topic">
+<a name="b3382638-444c-4ffa-baf9-2a88881f3246">&nbsp;&nbsp;put the variables like {{variablename}} in csv in various rows</a>
+</h3>
+<h2 class="topic">
+<a name="93280ae4-14a9-4ba9-8d2a-66ebe119042d">API</a>
+</h2>
+<h3 class="topic">
+<a name="9c4ee9bc-5251-4ade-864a-f6359cd1a162">&nbsp;set of procedures,functions of a software to be visible to other software</a>
+</h3>
+<h3 class="topic">
+<a name="c02cf1b3-e4d9-4b4a-b85a-76ab11d9a7aa">&nbsp;chef -  (Waiter/API) - Customer </a>
+</h3>
+<h3 class="topic">
+<a name="b5d44b53-579c-469c-af9f-433c7b5a6d4a">&nbsp;differences with unit</a>
+</h3>
+<h3 class="topic">
+<a name="6275a6dd-2d4b-4f58-8f0b-1d60c735eb1d">&nbsp;&nbsp;End to end </a>
+</h3>
+<h3 class="topic">
+<a name="2869e7cc-e98d-4d41-ae5d-a82974a06e26">&nbsp;&nbsp;tested after the build is ready</a>
+</h3>
+<h3 class="topic">
+<a name="4c233fd5-9a46-4061-88ef-950a0ad3e18c">&nbsp;&nbsp;its a system test</a>
+</h3>
+<h3 class="topic">
+<a name="72a23ed6-bb90-468b-88cb-667e35afe3e5">&nbsp;Daily life examples</a>
+</h3>
+<h3 class="topic">
+<a name="9439c0c0-a62c-4fe9-9032-cbcfe705477e">&nbsp;&nbsp;google Search</a>
+</h3>
+<h2 class="topic">
+<a name="37a61217-1020-455c-8068-9eb44df38b01">Response</a>
+</h2>
+<h3 class="topic">
+<a name="e7a5bdf4-f1fd-4afb-8f58-4c6b3408722b">&nbsp;Response Headers</a>
+</h3>
+<h3 class="topic">
+<a name="95745039-52a1-4261-b322-fcb962724e88">&nbsp;Status</a>
+</h3>
+<h3 class="topic">
+<a name="29581f98-1243-4498-b08c-82dcb7c27071">&nbsp;Code</a>
+</h3>
+<h3 class="topic">
+<a name="00006b31-0620-474a-baad-fee29b5f6483">&nbsp;Cookies</a>
+</h3>
+<h3 class="topic">
+<a name="917edb9f-8912-4e27-9947-ca28246c7f72">&nbsp;HEader</a>
+</h3>
+<h3 class="topic">
+<a name="21bc75c8-4e40-4848-b54c-1e7fa26e101a">&nbsp;Body</a>
+</h3>
+<h3 class="topic">
+<a name="6419dd08-f705-4611-9281-b14519a4c4bb">&nbsp;Time(approx)</a>
+</h3>
+<h3 class="topic">
+<a name="82896399-3f18-48d2-b7d8-6b04c8c4aa24">&nbsp;&nbsp;SLA</a>
+</h3>
+<h3 class="topic">
+<a name="c9c490bb-0e17-467b-86c7-3142f0ec2445">&nbsp;Size</a>
+</h3>
+<h2 class="topic">
+<a name="1e67480c-84b1-4f5f-9384-dfacafabb37b">Authorization</a>
+</h2>
+<h3 class="topic">
+<a name="7f662077-49b5-4261-80f8-c4312d346dce">&nbsp;Basic</a>
+</h3>
+<h3 class="topic">
+<a name="d239c6cf-ca1b-4bda-b6d4-f4435451be1c">&nbsp;&nbsp;Username/Password</a>
+</h3>
+<h3 class="topic">
+<a name="fde4ec85-be14-4e62-8aaa-c16f68f1c4a8">&nbsp;&nbsp;&nbsp;its Equivalent is passed in headers like below</a>
+</h3>
+<h3 class="topic">
+<a name="f8b33357-28fd-4f46-85e7-81038f995236">&nbsp;&nbsp;via header 
+Authentication = basic cG9zdG1hbjpwYX29yZA==</a>
+</h3>
+<h3 class="topic">
+<a name="2eea0247-b8ef-4473-949c-dcfd9a39549b">&nbsp;Oauth 2.0</a>
+</h3>
+<h3 class="topic">
+<a name="79240bea-165c-4b64-b41f-9392fd7df23a">&nbsp;&nbsp;Resource owner/user</a>
+</h3>
+<h3 class="topic">
+<a name="e8c3a1ab-41ac-46e7-897d-c63b2d2cf4d3">&nbsp;&nbsp;Client/ Third Party Application</a>
+</h3>
+<h3 class="topic">
+<a name="c77f22f1-a5c4-464e-9f87-b93fa811e330">&nbsp;&nbsp;Resource / Authorization Server</a>
+</h3>
+<h3 class="topic">
+<a name="2e254747-de9e-4cd8-85fb-52cfca954158">&nbsp;Bearer token</a>
+</h3>
+<h3 class="topic">
+<a name="556d3ee3-0fe7-4215-980c-6660a8076afa">&nbsp;and many others</a>
+</h3>
+<h2 class="topic">
+<a name="93aa1842-2e41-461c-9db7-c93205443a1d">Workspace</a>
+</h2>
+<h3 class="topic">
+<a name="5667e2ee-1fac-4026-ab10-efcb9e12834a">&nbsp;Personal</a>
+</h3>
+<h3 class="topic">
+<a name="4cce900f-6d6b-4b18-a3ec-bf020df9cffb">&nbsp;&nbsp;Only link sharing
+
+don share via links for office stuff</a>
+</h3>
+<h3 class="topic">
+<a name="9ee736af-a505-4fd6-bb5f-e1a48733efec">&nbsp;Team</a>
+</h3>
+<h2 class="topic">
+<a name="6b80bdc6-1b01-4b26-ba69-b5abf4373d6a">Monitors</a>
+</h2>
+<h3 class="topic">
+<a name="6f626018-6f8a-4cbb-9e1a-ae98d27714a7">&nbsp;def :- Allows you to run APIs throughout the day at various intervals</a>
+</h3>
+<h3 class="topic">
+<a name="7630a46a-3061-4558-8787-b60e8d750181">&nbsp;Global variables not allowed</a>
+</h3>
+<h2 class="topic">
+<a name="78b419a0-9d66-46f4-9639-336f60ddd2d7">Differences</a>
+</h2>
+<h3 class="topic">
+<a name="2a731668-e459-4ae0-bd6e-c8299f8228cf">&nbsp;Equal</a>
+</h3>
+<h3 class="topic">
+<a name="7a205757-be9c-4673-97b7-137b291b4791">&nbsp;&nbsp;EQL , deep equality, properties are compared</a>
+</h3>
+<h3 class="topic">
+<a name="5f5f16b6-e11a-4ccc-aa10-3d6fcab638eb">&nbsp;&nbsp;Equal === strict equality  , objects comparison</a>
+</h3>
+<h2 class="topic">
+<a name="c06d3945-d64c-4a1a-8df9-340e41fc7844">Mock Server</a>
+</h2>
+<h3 class="topic">
+<a name="6d41aefc-1b06-4507-b923-1e612304fd50">&nbsp;Fake server</a>
+</h3>
+<h3 class="topic">
+<a name="ba69f3e2-a0de-4b28-9f33-a5af3bdc6b9c">&nbsp;why</a>
+</h3>
+<h3 class="topic">
+<a name="0f16d863-33ea-4807-aa40-5467683b159c">&nbsp;&nbsp;to find problems before</a>
+</h3>
+<h3 class="topic">
+<a name="03f91ece-1aa7-4b72-80ee-4b745c2b5ef7">&nbsp;&nbsp;for a POC</a>
+</h3>
+<h3 class="topic">
+<a name="0bed2d53-da7b-4f6a-8d00-554ce37f0a2e">&nbsp;&nbsp;to test while development is on </a>
+</h3>
+<h3 class="topic">
+<a name="74a4e701-02e9-4bf6-9585-ae5f7b0c7b97">&nbsp;&nbsp;for UI development till actual server is ready</a>
+</h3>
+<h3 class="topic">
+<a name="ea10ccdb-c736-48eb-aaa6-4eee2b4bbb7f">&nbsp;&nbsp;Checking the dependencies</a>
+</h3>
+<h3 class="topic">
+<a name="72762f8a-d92f-4bd6-90ad-f0b05daf6afc">&nbsp;Required</a>
+</h3>
+<h3 class="topic">
+<a name="b70fbe0b-11f4-45d3-a653-255a9daea056">&nbsp;&nbsp;Method</a>
+</h3>
+<h3 class="topic">
+<a name="144991a9-14f5-4c48-9598-a1c296c3c9d6">&nbsp;&nbsp;Status Code</a>
+</h3>
+<h3 class="topic">
+<a name="ec8e3c1b-8719-4c8d-b808-a1868fee5703">&nbsp;&nbsp;URL</a>
+</h3>
+<h3 class="topic">
+<a name="3e9ad054-fcdd-4e49-b6d3-8baf1dacb322">&nbsp;&nbsp;Response</a>
+</h3>
+<h2 class="topic">
+<a name="141f6b41-1fb3-449f-ba0e-edd1cc0ec995">Cookies</a>
+</h2>
+<h3 class="topic">
+<a name="36b726fb-f9b9-4c3e-8245-c251207fbefb">&nbsp;Remember Stateful information for a stateless HTTP protocol</a>
+</h3>
+<h3 class="topic">
+<a name="b681dbed-fdcb-48e7-bfab-6fa7e5fc5aa4">&nbsp;Can be passed from one request to another(session id cookie) </a>
+</h3>
+<h3 class="topic">
+<a name="de850998-91f2-416b-9d96-e72b7a4fa7c1">&nbsp;Why needed</a>
+</h3>
+<h3 class="topic">
+<a name="5f09c7fb-8797-484f-af35-14ba0069b6ac">&nbsp;&nbsp;State information(login)</a>
+</h3>
+<h3 class="topic">
+<a name="f05995c8-3dcb-4cb1-98fe-8318469821ae">&nbsp;&nbsp;Tracking (show ads)</a>
+</h3>
+<h3 class="topic">
+<a name="46b511b9-3005-475d-ad96-1191e0440e0c">&nbsp;&nbsp;Personalisation (same color on search page)</a>
+</h3>
+<h3 class="topic">
+<a name="9aa2e266-6180-4ba7-8267-c4b3f81a09f9">&nbsp;Type</a>
+</h3>
+<h3 class="topic">
+<a name="0599338f-596e-41b4-8088-77d28d44ecc3">&nbsp;&nbsp;Session</a>
+</h3>
+<h3 class="topic">
+<a name="69d84188-f9cd-4593-9d25-83786d6a91b7">&nbsp;&nbsp;Permanent</a>
+</h3>
+<h3 class="topic">
+<a name="6118e419-b726-4a9d-b102-f5b7a9b4d1cd">&nbsp;Attributes</a>
+</h3>
+<h3 class="topic">
+<a name="33009082-42bb-48be-8462-ecd6ed01e867">&nbsp;&nbsp;expires</a>
+</h3>
+<h3 class="topic">
+<a name="93ffb36b-ec5a-4883-a11c-a7876201f633">&nbsp;&nbsp;&nbsp;if not defined it will be expired automatically </a>
+</h3>
+<h3 class="topic">
+<a name="f7239704-9926-484a-94fd-214bad73efb1">&nbsp;&nbsp;http-only</a>
+</h3>
+<h3 class="topic">
+<a name="49cbc84c-234a-4d58-adac-71502c8e6376">&nbsp;&nbsp;max-age</a>
+</h3>
+<h3 class="topic">
+<a name="359e338e-454a-48f0-87f9-0b18e2b60f35">&nbsp;&nbsp;domain</a>
+</h3>
+<h3 class="topic">
+<a name="f068aba1-98fd-4dcf-ae37-2df12d2f62bc">&nbsp;&nbsp;path</a>
+</h3>
+<h3 class="topic">
+<a name="61b2975d-9c87-4a80-9071-7617155df474">&nbsp;&nbsp;secure</a>
+</h3>
+<h3 class="topic">
+<a name="317400e3-74a3-46d0-9bab-7a45b24bccd5">&nbsp;example</a>
+</h3>
+<h3 class="topic">
+<a name="2a942676-d1e3-4df5-9bc2-ddcfad6c2ee1">&nbsp;&nbsp;Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Max-Age = &lt;number&gt;</a>
+</h3>
+<h3 class="topic">
+<a name="87a5bc92-1583-4973-a23b-ccb7b59afae8">&nbsp;Third Party cookies</a>
+</h3>
+<h3 class="topic">
+<a name="0b1755a6-cc87-4442-b842-81d589873f3a">&nbsp;&nbsp;Not from the site you are visiting but some ads</a>
+</h3>
+<h3 class="topic">
+<a name="c5c179ca-1607-4a4a-9cc2-940d42bddf20">&nbsp;dont add https or www while adding cookies in postman</a>
+</h3>
+<h2 class="topic">
+<a name="b793c06c-ea90-4c07-9bab-faf73b54de5c">Session </a>
+</h2>
+<h3 class="topic">
+<a name="f66424ee-0557-4210-8007-42b5ec8447f5">&nbsp;to prevent personal values share (credentials)</a>
+</h3>
+<h2 class="topic">
+<a name="1d2082eb-f6bd-453b-b519-9619d2e780b8">Newman</a>
+</h2>
+<h3 class="topic">
+<a name="7319a655-8581-4853-a326-e15fd29fc36c">&nbsp;CLI executable to run postman</a>
+</h3>
+<h3 class="topic">
+<a name="33f20a8a-cb7f-4b34-ba1b-cdf5fe66939b">&nbsp;To easily integrate postman APIs and code</a>
+</h3>
+<h3 class="topic">
+<a name="07a873b1-71cb-468d-9145-dde1491c9e15">&nbsp;built on node js</a>
+</h3>
+<h3 class="topic">
+<a name="4dc67b3d-d381-4b7e-a110-feb14514c8e0">&nbsp;pre-req</a>
+</h3>
+<h3 class="topic">
+<a name="b5605a4e-cc3f-4c46-8729-8d78410afd65">&nbsp;&nbsp;node js</a>
+</h3>
+<h3 class="topic">
+<a name="f56ebb07-859d-4704-ae86-361c9dbcc3fc">&nbsp;&nbsp;&nbsp;node -v</a>
+</h3>
+<h3 class="topic">
+<a name="2b246c5a-1e41-4c7a-9048-b1dab348cddf">&nbsp;&nbsp;NPM</a>
+</h3>
+<h3 class="topic">
+<a name="0224d25c-6621-428f-8d2b-68cc5784f28a">&nbsp;&nbsp;&nbsp;pkg mngr for javascript</a>
+</h3>
+<h3 class="topic">
+<a name="6116ffcc-57d0-49dc-b5c1-10305736a062">&nbsp;&nbsp;&nbsp;npm -v</a>
+</h3>
+<h3 class="topic">
+<a name="865bd909-677d-473a-bed8-6328209f3a03">&nbsp;install</a>
+</h3>
+<h3 class="topic">
+<a name="14625052-2be6-4c77-9b44-05c1ec9a4b03">&nbsp;&nbsp;npm install -g newman</a>
+</h3>
+<h3 class="topic">
+<a name="0271e9e6-4d25-427f-8430-cf4ee74aef73">&nbsp;how to use</a>
+</h3>
+<h3 class="topic">
+<a name="6ed9591f-7828-40b0-a3d6-fa6965a3497e">&nbsp;&nbsp;newman run collection_link</a>
+</h3>
+<h3 class="topic">
+<a name="16e37eac-5067-424d-95d6-21d3bd64fa27">&nbsp;&nbsp;newman run collectionJsonfile</a>
+</h3>
+<h3 class="topic">
+<a name="59ae3926-dd7e-4371-8f2d-a653c5e56f9c">&nbsp;&nbsp;options</a>
+</h3>
+<h3 class="topic">
+<a name="a615a086-f1fe-44ce-9a7c-a2a62018f616">&nbsp;&nbsp;&nbsp;--environment/-e</a>
+</h3>
+<h3 class="topic">
+<a name="ceaaf49b-3382-41be-b335-d1c09423bccf">&nbsp;&nbsp;&nbsp;--folder</a>
+</h3>
+<h3 class="topic">
+<a name="cbc5a6cd-dda6-48e8-bf03-8e7ae0b0f4fd">&nbsp;&nbsp;&nbsp;-n (iteration) single -</a>
+</h3>
+<h3 class="topic">
+<a name="0c95ab96-b694-4713-8170-f96c4c733daf">&nbsp;&nbsp;&nbsp;--delay-request</a>
+</h3>
+<h3 class="topic">
+<a name="141ae070-27d2-44ec-90a2-e885c744d334">&nbsp;&nbsp;&nbsp;&nbsp;will cause delay between request</a>
+</h3>
+<h3 class="topic">
+<a name="f90414ce-3b07-4085-972f-e81f353a3fc1">&nbsp;&nbsp;&nbsp;--bail</a>
+</h3>
+<h3 class="topic">
+<a name="656abea7-2c4e-461e-9b0a-b145ffcaaa65">&nbsp;&nbsp;&nbsp;&nbsp;set to false if you dont want to stop on failure</a>
+</h3>
+<h3 class="topic">
+<a name="25b6cb86-398a-48f6-be2c-07994d6e0cc0">&nbsp;&nbsp;&nbsp;run</a>
+</h3>
+<h3 class="topic">
+<a name="c1fa22f7-01ab-44d6-87ae-b1173a4f459f">&nbsp;&nbsp;&nbsp;&nbsp;newman run collectionName</a>
+</h3>
+<h3 class="topic">
+<a name="703f7a31-3198-4d20-8dba-1a9323f055f2">&nbsp;commands</a>
+</h3>
+<h3 class="topic">
+<a name="76d7f936-5a51-4480-859d-10e40beba1d7">&nbsp;&nbsp;to run even if failures</a>
+</h3>
+<h3 class="topic">
+<a name="74aaf9cd-f897-4719-a6f9-b596fb9eeb2f">&nbsp;&nbsp;&nbsp;S:\tk&gt;newman run Teck.postman_collection.json --bail false -e teckurl.postman_environment.json
+newman</a>
+</h3>
+<h2 class="topic">
+<a name="90a2c99d-9eb3-473b-b358-7f9b4ca3382e">Response Visualiser</a>
+</h2>
+<h3 class="topic">
+<a name="a36f3439-a328-4e88-b066-9ef30e0aa5ee">&nbsp;This can show an image as an output under visualise tab</a>
+</h3>
+<h3 class="topic">
+<a name="02c84323-2a31-4401-b07c-12e85dee3f4d">&nbsp; template = `&#127850; passing!
+        &lt;br /&gt;
+        &lt;img src="https://media4.giphy.com/media/THIvbrqPhSsTHxpuua/200w.webp" /&gt;</a>
+</h3>
+<h3 class="topic">
+<a name="f81bf3e7-7a6e-4dd2-af8d-0e8afdaa318d">&nbsp;pm.visualizer.set(template)</a>
+</h3>
+</body>
+</html>

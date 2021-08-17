@@ -35,3 +35,28 @@ if (pass == totalToPass) {
     `
 }
 pm.visualizer.set(template)
+
+
+
+
+// to have a table 
+
+
+var template = 
+`<table bgcolor = "#00FFEF">
+<tr>
+<th>Name</th>
+<th>URL</th>
+</tr>
+
+{{#each response}}
+<tr>
+<td>{{name}}</td>
+<td>{{url}}</td>
+</tr>
+{{/each}}
+
+</table>`
+
+var results = pm.response.json().results
+pm.visualizer.set(template, {response:  results});

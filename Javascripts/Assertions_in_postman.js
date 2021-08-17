@@ -94,6 +94,8 @@
 
 	pm.expect(pm.response.json()).to.be.an("object")
 
+    pm.expect(firstRequest.response, 'check saved example').to.not.be.empty
+	
 	    pm.expect([2]).to.be.an("array").that.is.empty
 
 	    pm.response.to.be.badRequest;
@@ -201,3 +203,92 @@ if(name !=undefined)
 else
    console.log("We did not found Tatooine in the output")
    pm.expect(true," Causing failure as we did not found what was required").to.equal(false)
+
+pm.test("Verify one property",function()
+{
+    pm.response.text().includes("data")
+})
+
+
+//Regular expressions
+   let firstMarkdownLinkRegex = /\[(.+)\]\((.+)\)/
+    pm.expect(firstRequest.request.description.match(firstMarkdownLinkRegex).length, 'check hyperlink').to.equal(3)
+
+// looping foreach 
+// Exist 
+  if (firstRequest.request.header) {
+        firstRequest.request.header.forEach( (header) => {
+            pm.expect(header.description, 'check header description').to.exist
+        })
+		pm.expect(firstRequest.request.url.query.forEach( (param) => { param.description}))
+    }pm.expect(firstRequest.request.url.query.forEach( (param) => { param.description}))
+    }	
+	
+	
+// Dynamic variable in postman
+https://learning.postman.com/docs/writing-scripts/script-references/variables-list/
+	
+// Sending Request via Pre-Requisite
+
+
+pm.variables.set("hex",pm.variables.replaceIn('{{$randomHexColor}}')
+)
+
+console.log(" The hex color is ",pm.variables.get("hex"))
+
+hex1=pm.variables.get("hex")
+
+hex2=hex1.substring(1,7)
+
+console.log(" Variable hex1 is ", hex2)
+hex3='http://thecolorapi.com/id?hex='+hex2
+// Example with a full-fledged request
+const getRequest = {
+  url: pm.variables.replaceIn(hex3),
+  method: 'GET',
+  
+};
+pm.sendRequest(getRequest, (error, response) => {
+  console.log(error ? error : response.json());
+  response = response.json()
+  hex = response.hex.value
+  rgb = response.rgb.value
+  name = response.name.value
+
+  console.log(" hex value is ", hex)
+  console.log(" rgb value is ", rgb)
+  console.log(" name value is ", name)
+
+  payload= ' { "hex": "'+hex + '" , "rgb": "'+rgb+'", "name": "'+name+'" }' 
+
+  pm.collectionVariables.set("payload",payload)
+   
+   console.log("Payload ", payload)
+ 
+});
+
+// .json() is necessary before accessing variables otherwise it returns objects 
+
+  pm.collectionVariables.set("id",pm.response.json().id)
+	
+	// to extract all relevant tags from html using cheerio library
+	
+	$ = cheerio.load(pm.response.text());
+links = $('a');
+const allLinks = [];
+$(links).each(function (i, link) {
+    
+    if($(link).attr('href'))
+    {
+    if($(link).attr('href').includes('https')){
+        //console.log(i + ': ' +  $(link).attr('href'));
+        allLinks.push($(link).attr('href'))
+    }
+    }
+    
+});
+    console.log("all links are", allLinks)
+    pm.collectionVariables.set("links", JSON.stringify(allLinks))
+    pm.collectionVariables.set("li", "test")
+
+
