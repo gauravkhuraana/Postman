@@ -10,6 +10,20 @@
 // Assertions in Postman 
 // you can put below either in Tests or Prerequisite 
 // Assertion as a form of function
+
+
+// First of all convert the response into json to get data from json response in postman in Tests section
+
+       var jsonResponse = pm.response.json();
+       // here points is the first node and would be different for your API
+       let name = jsonResponse.points.find( inp => {return inp.suite.id === "9000"})
+       console.log("The point id for the given testcase is " + name.id)
+       console.log("The testPlan id for the given testcase is " + name.testPlan.id)
+       
+
+
+
+
 	pm.test("Response should contain the key 'token",function()
 {
     var jsondata = pm.response.json();
