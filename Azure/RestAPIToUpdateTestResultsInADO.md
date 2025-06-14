@@ -19,6 +19,13 @@ GET https://dev.azure.com/{organization}/{project}/_apis/testplan/Plans/{planId}
 GET https://dev.azure.com/khuraanagaurav/Automation/_apis/testplan/Plans/20/Suites/33/TestPoint?testCaseId=23&api-version=7.2-preview.2
 ```
 
+** Import the below to automatically get all values **
+```
+curl --request GET \
+  --url 'https://dev.azure.com/khuraanagaurav/Automation/_apis/testplan/Plans/20/Suites/33/TestPoint?testCaseId=23&api-version=7.2-preview.2' \
+  --header 'authorization: Basic OjFZQTRDOVUwSzIyRFRMWlNSZk1Hb2RKakdGbEUzREpPNDZKUVFKOTlCRkFDQUFBQUFBQUFBQUFBQVNBWkRPQWtFVA=='
+```
+
 ### 🔄 Replaceable Parameters:
 | Placeholder        | Description                                      | Example             |
 |--------------------|--------------------------------------------------|---------------------|
@@ -83,7 +90,21 @@ Authorization: Basic <Base64 PAT>
 ```
 ![image](https://github.com/user-attachments/assets/3816195e-a7a9-4673-982d-cc6b018d8715)
 
-
+** Import the below to automatically get all values **
+```
+curl --request PATCH \
+  --url 'https://dev.azure.com/khuraanagaurav/Automation/_apis/testplan/Plans/20/Suites/33/TestPoint?api-version=7.2-preview.2' \
+  --header 'authorization: Basic OjFZQTRDOVUwSzIyRFhUT1ZoOHYxWmNKTWppSG1QekRMWlNSZk1Hb2RKakdGbEUzREpPNDZKUVFKOTlCRkFDQUFBQUFBQUFBQUFBQVNBWkRPQWtFVA==' \
+  --header 'content-type: application/json' \
+  --data '[{
+    "id": 15,
+    "results": {
+      "outcome": 2
+    }
+  }
+  ]'
+```
+  
 ### 🔄 Replaceable Fields:
 
 | Field          | Description                                      | Example |
