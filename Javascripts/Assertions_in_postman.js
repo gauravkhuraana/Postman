@@ -163,7 +163,6 @@ console.error("Testing error")
 	//4==='4' false
 	//4=='4' true
 
-	https://msit.powerbi.com/groups/390e4966-5fdf-46ba-9198-d6a8254ca930/reports/827e9ccf-12bd-4903-b097-7b94ea5dbcff/ReportSection271489865e70d1385d89
 
 // set Variable in postman
 	pm.collectionVariables.set("jsonBody",JSON.stringify(getRandomUserResponse))
