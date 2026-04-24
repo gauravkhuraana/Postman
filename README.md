@@ -16,6 +16,14 @@ Completed the **30 Days of Postman for Developers** challenge 🎉
 
 ---
 
+## 🎥 Featured Video
+
+[![Watch the Postman video on YouTube](https://img.youtube.com/vi/Z7zgosqc0SA/hqdefault.jpg)](https://www.youtube.com/watch?v=Z7zgosqc0SA)
+
+Check out this video for more Postman tips and walkthroughs.
+
+---
+
 ## 📚 Learning Resources
 
 | Resource | Link |
@@ -132,4 +140,3 @@ Found something useful? Have a cool collection or snippet to share?
 ---
 
 *Made with ❤️ by [Gaurav Khurana](https://linktr.ee/gauravkhurana) · [udzial.com](https://udzial.com)*
-
